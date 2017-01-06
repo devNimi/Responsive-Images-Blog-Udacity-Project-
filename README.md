@@ -1,11 +1,31 @@
 # Responsive Images: final version #
 This is project that I made during my Udacity's Responsive Images [course](https://www.udacity.com/course/responsive-images--ud882). Initially the blog looked like [this](http://udacity.github.io/responsive-images/downloads/RI-Project-Part-1-Start.zip).
 Course journey involves understading responsive images, using grunt to optimize images and automate workflow, I also helped me to go deep in world of  source set `srcset` attribute and `<picture>` element :)
+
+##Getting Started
+First you'll to need make sure you have all `node_modules` and optimized images in <mark>images/</mark> directory.  
+`cd` to project's root directory and run the following command:  
+```
+npm install
+```  
+There is one dependency that is not listed in package.json (webp-bin); remember to add that in with  
+```
+npm install webp-bin
+```  
+or just add this line `npm i -D webp-bin` to your `package.json`  
+It's time to run Grunt:  
+```
+grunt
+```
+  
+Please note that the project is configured to use ImageMagick (as opposed to GraphicsMagick) and requires that to be installed.
+
+
+
+
 ##Notes
 I used [this](https://github.com/somerandomdude/grunt-webp) grunt plugin to convert all images in images/ folder to [webp](https://developers.google.com/speed/webp/).  
-This plugin depends on WebP's cwebp encoder. You'll need to install the [WebP Package](https://developers.google.com/speed/webp/download) or use [webp-bin](https://github.com/yuanyan/node-webp-bin).  
-As a side note: make sure to run `npm install webp-bin` after `npm install` (i.e. installing dependencies from package.json) otherwise it'll generate an error message `Error: Cannot find module 'webp-bin'`  
-After that only run `grunt`
+This plugin depends on WebP's cwebp encoder. You'll need to install the [WebP Package](https://developers.google.com/speed/webp/download) or use [webp-bin](https://github.com/yuanyan/node-webp-bin).
 
 --> this can be also done with imagemagick command line tools. Simply used the command in terminal
 >mogrify -format jpg *.png
