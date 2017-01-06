@@ -13,7 +13,7 @@ After that only run `grunt`
 You can read more over [here](http://www.imagemagick.org/script/mogrify.php)
 
 <hr>
-I am really sorry for the messed created here :( I think this was the based I could do with my current knowledge :)
+I am really sorry for the messed created here :( I think this was the best I could do with my current knowledge :)
 `images_src/art_direction` I used an Image Editing tool to generate crop of the images and then used grunt to generate images as per my requirement. Naming convention for art_direction images is little different from other images but this is the only way it can be done without more mess. You'll know what I mean when you'll see Gruntfile.js  
 <hr>
 I thing more I would like to point here :)  
