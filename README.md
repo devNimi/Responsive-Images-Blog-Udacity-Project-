@@ -3,6 +3,9 @@ This is project that I made during my Udacity's Responsive Images [course](https
 Course journey involves understading responsive images, using grunt to optimize images and automate workflow, I also helped me to go deep in world of  source set `srcset` attribute and `<picture>` element :)
 
 ##Getting Started
+
+Make sure imagemagick and graphicsmagick are installed on your machine
+
 First you'll to need make sure you have all `node_modules` and optimized images in <mark>images/</mark> directory.  
 `cd` to project's root directory and run the following command:  
 ```
